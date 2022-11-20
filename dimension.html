@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        div{
+            background-color: lightblue;
+            width: auto;
+            height: 100px;
+        }
+        #div1{
+            background-color: plum;
+            height: 200px;
+            width: 200px;
+        }
+        #div2{
+            background-color: aqua;
+            height: inherit;
+        }
+        button{
+            background-color: blueviolet;
+            max-width: 300px;
+            min-height: 100px;
+        }
+        /*
+        1 valor todos os lados
+        2 valores cima, baixo
+        3 valores cima, lados, baixo
+        4 valores cima, direita, baixo, esquerda
+        */
+        #elemento1{
+            background-color: orange;
+            margin: 0 0 50px 0;
+            height: auto;
+            padding: 10px;
+        }
+        #elemento2{
+            background-color: purple;
+            margin-top: 10px;
+            margin-left: 35px;
+            padding-left: 20px;
+            padding-top: 20px;
+            height: auto;
+        }
+        #elemento3{
+            background-color: green;
+            width: 300px;
+            margin: auto;
+            padding-top: 20px;
+        }
+        #elemento4{
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: content-box;
+        }
+        #elemento5{
+            background-color: darksalmon;
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>Trilha de CSS</div>
+    <button>botão</button>
+
+    <p>Usando herança (inherit)</p>
+    <div id="div1">
+        Sou a DIV 1
+        <div id="div2">
+            Sou a DIV2
+        </div>
+    </div>
+
+    <p>Máximo e mínimo</p>
+
+    <button>Fechar Aplicação Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quod beatae cupiditate aut ipsam temporibus molestiae iure facere. Facilis voluptatem pariatur eligendi quas porro itaque ratione minima, tempore sit. Quaerat.
+    Esse voluptatibus ea, doloremque labore ipsum non itaque! Distinctio dolores incidunt, officiis delectus quae eveniet fugit optio omnis sint soluta quia beatae veritatis iusto, corporis nostrum accusamus quis placeat deleniti!</button>
+
+    <p>Margem e Padding</p>
+    <div id="elemento1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nam maxime nostrum cupiditate. Quae, at dolorem. Eum magnam fuga mollitia eaque ipsa, ad molestiae excepturi amet eligendi rem at autem?
+    Ullam consectetur praesentium harum recusandae optio inventore, ducimuspraesentium harum recusandae optio inventore, ducimuspraesentium harum recusandae optio inventore, ducimus est laboriosam voluptatum ipsum ipsam ut beatae, facilis expedita doloremque error nemo numquam minima suscipit natus maxime cupiditate culpa! Laudantium, necessitatibus ab?</div>
+    <div id="elemento2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis pariatur natus itaque vel aliquid, beatae iusto quibusdam perferendis nemo et! Perferendis ab rem ipsum dolores, enim omnis sunt quis laudantium.
+    Praesentium fuga quisquam laborum enim distinctio omnis fugit id, corrupti, recusandae dignissimos delectus officiis vero quasi at nemo assumenda, fugiat exercitationem optio repellendus repellat ipsa nulla eum numquam in. Rerum.
+    Assumenda laudantium debitis eos voluptas consequatur reprehenderit accusantium enim iure earum doloremque, velit adipisci quos quisquam odit vero fugit eum? Voluptates nihil, asperiores numquam necessitatibus itaque voluptatem incidunt est repellendus.</div>
+    <div id="elemento3">Elemento 3</div>
+
+    <div id="elemento4">box-sizing:content-box <br> Box 200x200 padding 20 = 240x240</div>    
+    <div id="elemento5">box-sizing:border-box <br> Box 200x200 padding 20 = 200x200</div>
+</body>
+</html>
