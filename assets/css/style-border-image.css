@@ -1,0 +1,63 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.exemplo{
+    background-color: darkorchid;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+}
+#exemplo-1{
+    border-image-source: url(../img/border.jpg);
+}
+#exemplo-2{
+    border-image-source: linear-gradient(red, blue);
+}
+#exemplo-3{
+    border-image-source: url(../img/border.jpg);
+    border-image-slice: 39;
+}
+#exemplo-4{
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: 50;
+}
+#exemplo-5{
+    border-image-source: url(../img/border.jpg);
+    border-image-slice: 39;
+    border-image-width: 10px 20px 30px 40px;
+}
+#exemplo-6{
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: 50;
+    border-image-width: auto;
+}
+#exemplo-7{
+    border-image-source: url(../img/border.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 160;
+}
+#exemplo-8{
+    border-image-source: url(../img/border.jpg);
+    border-image-repeat: round;
+    border-image-slice: 160;
+}
+#exemplo-9{
+    border-image-source: url(../img/border.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 160;
+    margin: 50px auto;
+    border-image-outset: 40px;
+}
+#exemplo-10{
+    border-image-source: linear-gradient(red, blue);
+    border-image-repeat: repeat;
+    border-image-slice: 160;
+    border-image-outset: 10px 20px 30px 40px;
+    margin: 50px auto;
+}
+
+#exemplo-11{
+    border-image: url(../img/border.jpg) 160 / 20px / 10px repeat;/* source slice / width / outset repeat */
+    margin: 50px auto;
+}
