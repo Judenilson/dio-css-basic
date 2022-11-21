@@ -1,0 +1,39 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-weight: normal;
+    src: local(), url('../fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Batata';
+    font-weight: bold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Batata';
+    font-weight: lighter;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+p{
+    font-family: 'Roboto Mono', monospace;
+}
+@font-face {
+    font-family: 'League';
+    font-weight: normal;
+    src: url('../fonts/LeagueMono-VF.ttf');
+}
+.bold{
+    font-family: 'Batata';
+    font-weight: bold;
+}
+.lighter{
+    font-family: 'Batada';
+    font-weight: lighter;
+}
+li{
+    font-family: 'Pacifico';
+    font-weight: normal;
+}

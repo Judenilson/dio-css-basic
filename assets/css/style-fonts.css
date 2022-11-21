@@ -1,35 +1,90 @@
-*{
-    font-family: fantasy, Arial, Helvetica, sans-serif;
+@import url(./style-global.css);
+code{
+    background-color: aquamarine;
 }
-@font-face {
-    font-family: Roboto;
-    src: local(), url('../fonts/Roboto-Regular.ttf');
+#xx-small{
+    font-size: xx-small;
+}
+#x-small{
+    font-size: x-small;
+}
+#small{
+    font-size: small;
+}
+#medium{
+    font-size: medium;
+}
+#large{
+    font-size: large;
+}
+#x-large{
+    font-size: x-large;
+}
+#xx-large{
+    font-size: xx-large;
+}
+div{
+    font-size: 30px;
+}
+div p{
+    font-size: smaller;
+}
+#normal{
+    font-style: normal;
+}
+#italic{
+    font-style: italic;
+}
+#oblique{
+    font-style: oblique;
+}
+#bold{
+    font-weight: 900;
+}
+#weight{
+    font-weight: bold;
+}
+#weight p{
+    font-weight: lighter;
+}
+#exemplo-smallcaps{
+    font-variant: small-caps;
+}
+.espacamento{
+    font-family: 'League';
     font-weight: normal;
 }
-@font-face {
-    font-family: Batata;
-    src: url('../fonts/Roboto-Bold.ttf');
-    font-weight: bold;
+#ultra-condensed{
+    font-stretch: ultra-condensed;
 }
-@font-face {
-    font-family: Batata;
-    src: url('../fonts/Roboto-Thin.ttf');
-    font-weight: lighter;
+#extra-condensed{
+    font-stretch: extra-condensed;
 }
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+#semi-condensed{
+    font-stretch: semi-condensed;
+}
+#normal{
+    font-stretch: normal;
+}
+#semi-expanded{
+    font-stretch: semi-expanded;
+}
+#expanded{
+    font-stretch: expanded;
+}
+#extra-expanded{
+    font-stretch: extra-expanded;
+}
+#ultra-expanded{
+    font-stretch: ultra-expanded;
+}
 
-p{
-    font-family: 'Roboto';
+#line{
+    line-height: 1.5;
 }
-.bold{
-    font-family: 'Roboto';
-    font-weight: bold;
+#line2{
+    line-height: 200%;
 }
-.lighter{
-    font-family: 'Roboto';
-    font-weight: lighter;
-}
-li{
-    font-family: 'Rubik Microbe';
-    font-weight: bold;
+#prop-font{
+    font: italic small-caps bold 24px/2 Georgia, serif;
 }
