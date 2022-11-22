@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Textos</title>
+    <style>
+        *{
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+        code{
+            background-color: aquamarine;
+        }
+        #none{
+            text-transform: none;
+        }
+        #capitalize{
+            text-transform: capitalize;
+        }
+        #uppercase{
+            text-transform: uppercase;
+        }
+        #lowercase{
+            text-transform: lowercase;
+        }        
+        #caixa-texto{
+            width: 370px;
+            border: 1px solid black;
+        }
+        #align p{            
+            background-color: lavender;
+            padding: 10px;
+            text-align: center;
+        }        
+        #alignj p{            
+            background-color: lavender;
+            padding: 10px;
+            text-align: justify;
+        }        
+        #alignr p{            
+            background-color: lavender;
+            padding: 10px;
+            text-align: right;
+        }
+        h1 + p{
+            color: purple;
+            text-decoration: underline;
+        }
+        #exemplo-decoration{
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: red;
+            text-decoration-thickness: 2px;
+        }
+        #exemplo-decoration-uniqueline{
+            text-decoration: underline wavy blue 2px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #ident{
+            text-indent: 50px;
+        }
+        #letter-space{
+            letter-spacing: 10px;
+        }
+        #word-space{
+            word-spacing: 10px;
+        }
+        .exemplows{
+            width: 200px;
+            background-color: greenyellow;
+        }
+        .exemplows span{
+            background-color: green;
+            color: white;
+        }
+        #nowrap{
+            white-space: nowrap;        
+        }
+        #pre{
+            white-space: pre;            
+        }
+        #pre-line{
+            white-space: pre-line;
+        }
+        #pre-wrap{
+            white-space: pre-wrap;
+        }
+        #break-spaces{
+            white-space: break-spaces;
+        }
+        
+        .exemploww{
+            width: 100px;
+            background-color: greenyellow;
+        }        
+        #wrap-normal{
+            word-wrap: normal;
+        }
+        #wrap-break-word{
+            word-wrap: break-word;
+        }
+        #b-normal{
+            word-break: normal;
+        }
+        #b-break-all{
+            word-break: break-all;
+        }
+        #b-keep-all{
+            word-break: keep-all;
+        }
+        .exemplowm{
+            max-width: 300px;            
+            min-width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+        #horizontal-tb{
+            writing-mode: horizontal-tb;
+        }        
+        #vertical-rl{
+            writing-mode: vertical-rl;
+        }
+        #vertical-lr{
+            writing-mode: vertical-lr;
+        }
+        
+        .exemploover{
+            width: 200px;
+            background-color: greenyellow;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        #clip{
+            text-overflow: clip;
+        }
+        #ellipsis{
+            text-overflow: ellipsis;
+        }
+        #string{
+            text-overflow: 'Ver mais >';
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>text-transform</code> </h1>
+    <code>text-transform: none</code>
+    <p id="none">É RESPONSÁVEL por definir quais caracteres vão estar em Maiúsculo, minúsculo, etc.</p><br>
+    <code>text-transform: capitalize</code>
+    <p id="capitalize">É RESPONSÁVEL por definir quais caracteres vão estar em Maiúsculo, minúsculo, etc.</p><br>
+    <code>text-transform: uppercase</code>
+    <p id="uppercase">É RESPONSÁVEL por definir quais caracteres vão estar em Maiúsculo, minúsculo, etc.</p><br>
+    <code>text-transform: lowercase</code>
+    <p id="lowercase">É RESPONSÁVEL por definir quais caracteres vão estar em Maiúsculo, minúsculo, etc.</p><br>
+        
+    <h1>Propriedade <code>text-align</code> </h1>
+    <div id="align">
+        <code>text-align: center</code>
+        <p>Alinhar texto a elementos de forma horizontal</p>
+        <div id="caixa-texto">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate laboriosam fugit cumque doloribus, obcaecati eveniet officiis fugiat magnam fuga incidunt at eius, voluptas assumenda asper, delectus eos?</p>
+        </div>
+    </div>
+    <br>
+    <div id="alignj">
+        <code>text-align: justify</code>
+        <p>Alinhar texto a elementos de forma horizontal</p>
+        <div id="caixa-texto">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate laboriosam fugit cumque doloribus, obcaecati eveniet officiis fugiat magnam fuga incidunt at eius, voluptas assumenda asper, delectus eos?</p>
+        </div>
+    </div>
+    <br>
+    <div id="alignr">
+        <code>text-align: right</code>
+        <p>Alinhar texto a elementos de forma horizontal</p>
+        <div id="caixa-texto">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate laboriosam fugit cumque doloribus, obcaecati eveniet officiis fugiat magnam fuga incidunt at eius, voluptas assumenda asper, delectus eos?</p>
+        </div>
+    </div>
+    
+    <h1>Propriedade <code>text-decoration</code> </h1>
+    <p>Adiciona ou remove linhas em cima, no meio ou embaixo do texto.</p>
+    <p>
+        É uma propriedade abreviada de:
+        <ul>
+            <li><code>text-decoration-line</code></li>
+            <li><code>text-decoration-style</code></li>
+            <li><code>text-decoration-color</code></li>
+            <li><code>text-decoration-thickness</code></li>
+        </ul>
+    </p>
+    <p id="exemplo-decoration">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolores error maxime fuga aliquam, pariatur eos, praesentium cumque velit facilis exercitationem ullam sit autem nemo laboriosam cum aut ex? Eius?</p>
+    <p id="exemplo-decoration-uniqueline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolores error maxime fuga aliquam, pariatur eos, praesentium cumque velit facilis exercitationem ullam sit autem nemo laboriosam cum aut ex? Eius?</p>
+    <a href="#">link exemplo</a>
+    
+    <h1>Propriedade <code>text-ident</code> </h1>
+    <p id="ident">Define o recuo da primeira linha do texto.</p>
+    <p id="ident">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo eum dolores ullam rem voluptate. Dolore, sint. Mollitia consectetur omnis excepturi numquam! Provident perspiciatis ad amet corrupti tempore, vel recusandae accusamus.</p>
+
+    <h1>Propriedade <code>letter-spacing</code> </h1>
+    <p id="letter-space">Adicionar espaçamento entre caracteres</p>
+
+    <h1>Propriedade <code>word-spacing</code> </h1>
+    <p id="word-space">Adicionar espaçamento entre palavras</p>
+
+    <h1>Propriedade <code>white-space</code> </h1>
+    <p>Define como espaços em branco do texto de um determinado elemento é tratado.</p>
+    <p>Exemplos:</p>
+    <code>white-space: normal;</code>
+    <p id="normal" class="exemplows">
+        <span>Lorem       ipsum dolor sit 
+            amet, consectetur a
+            dipisicing    elit. Error, sed praesent
+            ium iusto officii
+            s dolores quidem nihil necessitat                                                    
+            ibus nulla, assumenda ab nesciunt ratione sapiente mollitia
+             ipsam. Repellendus facere d
+             eserunt quis optio?</span>
+    </p>
+    <code>white-space: nowrap;</code>
+    <p id="nowrap" class="exemplows">
+        <span>Lorem       ipsum dolor sit 
+            amet, consectetur a
+            dipisicing    elit. Error, sed praesent
+            ium iusto officii
+            s dolores quidem nihil necessitat                                                    
+            ibus nulla, assumenda ab nesciunt ratione sapiente mollitia
+             ipsam. Repellendus facere d
+             eserunt quis optio?</span>
+    </p>
+    <code>white-space: pre;</code>
+    <p id="pre" class="exemplows">
+        <span>Lorem       ipsum dolor sit 
+            amet, consectetur a
+            dipisicing    elit. Error, sed praesent
+            ium iusto officii
+            s dolores quidem nihil necessitat                                                    
+            ibus nulla, assumenda ab nesciunt ratione sapiente mollitia
+             ipsam. Repellendus facere d
+             eserunt quis optio?</span>
+    </p>
+    <code>white-space: pre-line;</code>
+    <p id="pre-line" class="exemplows">
+        <span>Lorem       ipsum dolor sit 
+            amet, consectetur a
+            dipisicing    elit. Error, sed praesent
+            ium iusto officii
+            s dolores quidem nihil necessitat                                                    
+            ibus nulla, assumenda ab nesciunt ratione sapiente mollitia
+             ipsam. Repellendus facere d
+             eserunt quis optio?</span>
+    </p>
+    <code>white-space: pre-wrap;</code>
+    <p id="pre-wrap" class="exemplows">
+        <span>Lorem       ipsum dolor sit 
+            amet, consectetur a
+            dipisicing    elit. Error, sed praesent
+            ium iusto officii
+            s dolores quidem nihil necessitat                                                    
+            ibus nulla, assumenda ab nesciunt ratione sapiente mollitia
+             ipsam. Repellendus facere d
+             eserunt quis optio?</span>
+    </p>
+    <code>white-space: break-spaces;</code>
+    <p id="break-spaces" class="exemplows">
+        <span>Lorem       ipsum dolor sit 
+            amet, consectetur a
+            dipisicing    elit. Error, sed praesent
+            ium iusto officii
+            s dolores quidem nihil necessitat                                                    
+            ibus nulla, assumenda ab nesciunt ratione sapiente mollitia
+             ipsam. Repellendus facere d
+             eserunt quis optio?</span>
+    </p>
+
+    <h1>Propriedade <code>word-wrap</code> </h1>
+    <p>Adicionar quebra de palavra, caso não caiba na linha.</p>
+
+    <code>word-wrap: normal;</code>
+    <p id="wrap-normal" class="exemploww">
+        judenilson araujo silva judenilsonaraujosilva judenilson araujo silva
+    </p>
+    <code>word-wrap: break-word;</code>
+    <p id="wrap-break-word" class="exemploww">
+        judenilson araujo silva judenilsonaraujosilva judenilson araujo silva
+    </p>
+
+    
+    <h1>Propriedade <code>word-break</code> </h1>
+    <p>Adicionar quebra de palavra, caso não caiba na linha.</p>
+
+    <code>word-break: normal;</code>
+    <p id="b-normal" class="exemploww">
+        judenilson araujo silva judenilsonaraujosilva judenilson araujo silva 이코스는정말잘진행되고있습니다
+    </p>
+    <code>word-break: break-all;</code>
+    <p id="b-break-all" class="exemploww">
+        judenilson araujo silva judenilsonaraujosilva judenilson araujo silva 이코스는정말잘진행되고있습니다
+    </p>
+    <code>word-break: keep-all;</code>
+    <p id="b-keep-all" class="exemploww">
+        judenilson araujo silva judenilsonaraujosilva judenilson araujo silva 이코스는정말잘진행되고있습니다
+    </p>
+
+    
+    <h1>Propriedade <code>writing-mode</code> </h1>
+    <p>Define a orientação do texto (vertical ou horizontal).</p>
+    <code>writing-mode: horizontal-tb;</code>
+    <p id="horizontal-tb" class="exemplowm">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, temporibus sit! Optio molest 이코스는정말잘진행되고있습니다
+    </p>
+    <code>writing-mode: vertical-rl;</code>
+    <p id="vertical-rl" class="exemplowm">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, temporibus sit! Optio molest 이코스는정말잘진행되고있습니다
+    </p>
+    <code>writing-mode: vertical-lr;</code>
+    <p id="vertical-lr" class="exemplowm">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, temporibus sit! Optio molest 이코스는정말잘진행되고있습니다
+    </p>
+    
+    <h1>Propriedade <code>text-overflow</code> </h1>
+    <p>Define como visualizar o texto.</p>
+    <code>text-overflow: clip;</code>
+    <p id="clip" class="exemploover">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, temporibus sit! Optio molest 이코스는정말잘진행되고있습니다
+    </p>
+    <code>text-overflow: ellipsis;</code>
+    <p id="ellipsis" class="exemploover">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, temporibus sit! Optio molest 이코스는정말잘진행되고있습니다
+    </p>
+    <code>text-overflow: string; (Não funcionou no Edge)</code>
+    <p id="string" class="exemploover">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, temporibus sit! Optio molest 이코스는정말잘진행되고있습니다
+    </p>
+</body>
+</html>
