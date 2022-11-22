@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Absolutas</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table {
+            border: solid 1px black;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+            padding: 5px;
+            margin: 0px;
+        }
+        table thead th{
+            background-color: coral; 
+            padding: 5px;           
+        }
+        table tfoot td{
+            background-color: rgb(40, 29, 53);
+            color: white;
+        }
+        table tbody tr:nth-child(even){
+            background-color: rgb(224, 220, 229);
+        }
+        table tbody tr:hover td{
+            background-color: rgb(114, 0, 245);
+            cursor: pointer;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <h1>Unidades de Medidas Absolutas</h1>
+    <ul>
+        <li>integer : 1024, -78 </li>
+        <li>number : 0.255, 128, -1.2</li>
+        <li>percentage : 50%</li>
+        <li>dimensions :
+            <ul>
+                <li>lenght : px, em, vw, in</li>
+                <li>angle : deg, rad, grad, turn</li>
+                <li>time : s, ms</li>
+                <li>resolutions : dpi, dpcm, dppx</li> 
+            </ul>
+        </li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Unidade</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cm</td>
+                <td>Centímetro</td>
+            </tr>
+            <tr>                   
+                <td>mm</td>
+                <td>Milímetros</td>
+            </tr>
+            <tr>                   
+                <td>Q</td>
+                <td>Quarto de Milímetro</td>
+            </tr>
+            <tr>                   
+                <td>in</td>
+                <td>Polegadas</td>
+            </tr>
+            <tr>                   
+                <td>pc</td>
+                <td>Paica</td>
+            </tr>
+            <tr>                   
+                <td>pt</td>
+                <td>Pontos</td>
+            </tr>
+            <tr>                   
+                <td>px</td>
+                <td>Pixels</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

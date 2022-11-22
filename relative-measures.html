@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas Absolutas</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+        }
+        table {
+            border: solid 1px black;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+            padding: 5px;
+            margin: 0px;
+        }
+        table thead th{
+            background-color: coral; 
+            padding: 5px;           
+        }
+        table tfoot td{
+            background-color: rgb(40, 29, 53);
+            color: white;
+        }
+        table tbody tr:nth-child(even){
+            background-color: rgb(224, 220, 229);
+        }
+        table tbody tr:hover td{
+            background-color: rgb(114, 0, 245);
+            cursor: pointer;
+        }
+        .circulo{
+            width: 50px;
+            height: 50px;
+            border: 1px solid plum;
+            background-color: plum;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;            
+        }
+        #elemento-pai{
+            width: 400px;
+            border: 2px solid black;
+            font-size: 30px;
+        }
+        .pixel{
+            width: 300px;
+            background-color: aqua;
+        }
+        .porcentagem{
+            width: 50%;
+            background-color: pink;
+        }
+        .em{
+            padding: 10px;
+        }
+        .em p{
+            margin: 0;
+        }
+        #elemento1{
+            background-color: yellow;
+            font-size: 10px;
+        }
+        #elemento2{
+            background-color: palevioletred;
+            font-size: 2em;
+        }
+        #elemento3{
+            background-color: aquamarine;
+            font-size: 2em;
+        }
+        #elemento4{
+            background-color: fuchsia;
+            font-size: 10px;
+            width: 50em;
+        }
+        #elementor1{
+            background-color: yellow;
+            font-size: 1rem;
+        }
+        #elementor2{
+            background-color: palevioletred;
+            font-size: 2rem;
+        }
+        #elementor3{
+            background-color: aquamarine;
+            font-size: 3rem;
+        }
+        #elementor4{
+            background-color: fuchsia;
+            font-size: 10px;
+            width: 10rem;
+            height: 4rem;
+        }
+        .vw{
+            height: 20px;
+            padding: 10px;
+        }
+        #elemento-vw{
+            width: 300px;
+            border: 2px solid black;
+        }
+        #exemplo-vw1{
+            background-color: yellow;
+            width: 50%;
+        }
+        #exemplo-vw2{
+            background-color: palevioletred;
+            width: 50vw;
+        }
+        #exemplo-vw3{
+            background-color: aquamarine;
+            width: 50vh;
+        }
+        #exemplo-vwmin{
+            background-color: yellow;
+            width: 20vmin;
+        }
+        #exemplo-vwmax{
+            background-color: aquamarine;
+            width: 20vmax;
+        }
+        .calc{
+            padding: 10px;
+        }
+        #calc1{
+            background-color: yellow;
+            width: 300px;
+            box-sizing: border-box;
+        }
+        #calc2{
+            background-color: palevioletred;   
+            box-sizing: border-box; 
+            width: calc(100% - 30px); /* Atenção tem q separar os valores do operador por ESPAÇO! */
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <h1>Unidades de Medidas Relativas</h1>
+    <p>As unidades relativas são calculadas com base em unidades já conhecidas de
+        um <strong>outro elemento</strong>, o que faz com que o resultado possa 
+        <strong>variar</strong> de acordo com o valor da propriedade do elemento no qual 
+        estamos nos baseando.</p>
+    <div class="circulo"><p>%</p></div>
+    <div class="circulo"><p>em</p></div>
+    <div class="circulo"><p>rem</p></div>
+    <div class="circulo"><p>vw</p></div>
+    <div class="circulo"><p>vh</p></div>
+    <div class="circulo"><p>...</p></div>
+
+    <h2>Porcetagem</h2>
+    <p>A porcentagem é uma unidade de medida que irá utilizar como referência
+        o elemento pai para se basear, podendo alterar os resultados de acordo com o lugar em que está inserido.
+    </p>
+    <h3>Pixel x Porcentagem</h3>
+    <div class="pixel">widht: 300px;</div>
+    <div class="porcentagem">widht: 50%;</div>
+    <hr>
+    <p>Elemento pai possui 400px de largura e um font-size de 40 px.</p>
+    <div id="elemento-pai">
+        <div class="pixel">widht: 300px;</div>
+        <div class="porcentagem" style="font-size: 50%;">widht: 50%;</div>
+    </div>
+
+    <h2>em</h2>
+    <p>A unidade de medida em, quando ultilizada para definir o tamanho de fonte de um elemento, vai utilizarcomo referência o 
+        valor da propriedade font-size do elemento pai no qual está inserido.
+    </p>
+    <p>Caso seja utilizado a unidade em para outras propriedades que não sejam o tamanho da fonte do elemento,
+        o resultado será em relação ao tamanho da fonte do próprio elemento em que etá sendo definida a propriedade.
+    </p>
+    <div class="em" id="elemento1">
+        font size 10px
+        <div class="em" id="elemento2">
+            font size 2em = 20px
+            <div class="em" id="elemento3">
+                font size 2em = 40px
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="em" id="elemento4">font size 10px, width 50em = 500px</div>
+
+    <h2>rem</h2>
+    <p>O rem(root em) tem um funcionamento semelhante à unidade de medida em, porém a diferença é que, enquanto 
+        o em utiliza o elemento pai como referência, o rem está relacionado ao tamanho da fonte do elemento raiz, chamado root, que no caso, é a tag html.</p>
+
+    <div class="rem" id="elementor1">
+        font size 1rem = 16px
+        <div class="rem" id="elementor2">
+            font size 2rem = 32px
+            <div class="rem" id="elementor3">
+                font size 3rem = 48px
+            </div>
+        </div>
+    </div>
+    <div class="rem" id="elementor4">font size 10px, width 10rem = 160px, height 4rem = 64px</div>
+
+    <h2>Viewport Units</h2>
+    <p>Viewport é a área visível de uma página web, podendo variar de dispositivo para dispositivo. As 
+        unidades de medida viewport, vão ser calculadas em relação ao tamanho da área em que o usuário está
+    vendo sua página.</p>
+    <ul>
+        <li>1vw = 1% do tamanho da largura da área visível da página.</li>
+        <li>1vh = 1% do tamanho da altura da área visível da página.</li>
+    </ul>
+    <div id="elemento-vw">
+        <div class="vw" id="exemplo-vw1">widht: 50%;</div>
+        <div class="vw" id="exemplo-vw2">widht: 50vw;</div>
+        <div class="vw" id="exemplo-vw3">widht: 50vh;</div>
+    </div>
+    <div class="vw" id="exemplo-vwmin">widht: 20vmin;</div>
+    <div class="vw" id="exemplo-vwmax">widht: 20vmax;</div>
+
+    <h2>ex e ch</h2>
+    <p>Raramente utilizadas!</p>
+    <p>A unidade ex irá utilizar o tamanho da altura do caractere x em minúsculo da fonte do elemento.</p>
+    <p>O ch tem como referência a largura do caractere 0 da fonte do elemento.</p>
+    <p><Strong>Curiosidade:</Strong> Ao utilizar ch e a fonte for mono-espaçada estaremos definindo quantos caracteres cabem no espaço.</p>
+
+    <h2>Função calc()</h2>
+    <div class="calc" id="calc1">
+        Elemento pai
+        <div class="calc" id="calc2">
+            Elemento filho
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
