@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outros</title>
+    <style>
+        .exemplo{
+            background-color: rgba(186, 85, 211, 0.507);
+            border: 10px solid orange;
+            color: black;
+            padding: 20px;
+        }
+        img{
+            width: 50%;
+            opacity: 0.5;
+        }
+        
+        .exemploover{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(186, 85, 211, 0.507);
+            border: 5px solid orange;
+            color: black;
+            padding: 20px;
+            
+            overflow: visible;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow: auto;
+        }
+        .x-scroll{
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>opacity</code> </h1>
+    <h2>Define o nível de tranparência de um elemento.</h2>
+    <div class="exemplo">
+        <h3>Trilha CSS</h3>
+        <p>Conhecendo todas as Propriedades CSS</p>
+        <img src="./assets/img/dio.png" alt="">
+    </div>
+
+    <h1>Propriedade <code>overflow</code> </h1>
+    <p>Controla como o conteúdo deve ser exibido caso ultrapasse os limites do container.</p>
+
+    <code>overflow: visible</code>
+    <div class="exemploover">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus fuga vitae labore iusto voluptatibus aperiam accusamus blanditiis doloribus quos, quidem reiciendis sit alias explicabo nam aspernatur, tempore id cum.</p>    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat labore dolore saepe repudiandae quis numquam nisi? Dolor earum maxime harum sunt quaerat perspiciatis sed alias laboriosam quis, quae qui.</p>
+    </div> <br><br><br><br><br><br><br>
+    <code>overflow: hidden</code>
+    <div class="exemploover hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus fuga vitae labore iusto voluptatibus aperiam accusamus blanditiis doloribus quos, quidem reiciendis sit alias explicabo nam aspernatur, tempore id cum.</p>    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat labore dolore saepe repudiandae quis numquam nisi? Dolor earum maxime harum sunt quaerat perspiciatis sed alias laboriosam quis, quae qui.</p>
+    </div><br>
+    <code>overflow: scroll</code>
+    <div class="exemploover scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus fuga vitae labore iusto voluptatibus aperiam accusamus blanditiis doloribus quos, quidem reiciendis sit alias explicabo nam aspernatur, tempore id cum.</p>    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat labore dolore saepe repudiandae quis numquam nisi? Dolor earum maxime harum sunt quaerat perspiciatis sed alias laboriosam quis, quae qui.</p>
+    </div><br>
+    <code>overflow: auto</code>
+    <div class="exemploover auto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus fuga vitae labore iusto voluptatibus aperiam accusamus blanditiis doloribus quos, quidem reiciendis sit alias explicabo nam aspernatur, tempore id cum.</p>    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat labore dolore saepe repudiandae quis numquam nisi? Dolor earum maxime harum sunt quaerat perspiciatis sed alias laboriosam quis, quae qui.</p>
+    </div><br>
+    <code>overflow-x: scrool</code>
+    <div class="exemploover x-scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus fuga vitae labore iusto voluptatibus aperiam accusamus blanditiis doloribus quos, quidem reiciendis sit alias explicabo nam aspernatur, tempore id cum.</p>    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat labore dolore saepe repudiandae quis numquam nisi? Dolor earum maxime harum sunt quaerat perspiciatis sed alias laboriosam quis, quae qui.</p>
+    </div>
+    
+</body>
+</html>
